@@ -96,11 +96,6 @@
 
                         swal("Oops...", `${response.status}`, "error");
                     }
-                    else if(response.status === "Please Verify you Email")
-                    {
-
-                        swal("Oops...", `${response.status}`, "error");
-                    }
                     else
                     {
                         swal("Done!", `${response.status}`, "success");
