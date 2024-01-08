@@ -33,7 +33,7 @@
                     <h5>{{$item->products->name}}</h5>
                 </div>
                 <div class="col-md-2 text-center ">
-                    <h5>RS {{$item->products->selling_price}}</h5>
+                    <h5>Rp {{$item->products->selling_price}}</h5>
                 </div>
                 <div class="col-md-3">
                     <input type="hidden" class="prod_id" value="{{$item->prod_id}}">
@@ -61,7 +61,7 @@
         </div>
         <div class="card-footer d-flex flex-column">
             <div class="d-flex align-items-center justify-content-end text-center">
-                <h6 class="float-end">Total Price : RS {{$total}}</h6>
+                <h6 class="float-end">Total Price : Rp {{$total}}</h6>
             </div>
             <hr>
             <div class="d-flex align-items-center justify-content-end">
@@ -104,7 +104,7 @@ $(document).ready(function () {
             e.preventDefault();
             var inc_value = $(this).closest('.product_data').find('.quantity_input').val();
 
-            var value = parseInt(inc_value, 10);
+            var value = paRpeInt(inc_value, 10);
             value = isNaN(value) ? 0 : value;
             if(value < 10)
             {
@@ -117,7 +117,7 @@ $(document).ready(function () {
             console.log('hello')
 
             var dec_value = $(this).closest('.product_data').find('.quantity_input').val();
-            var value = parseInt(dec_value, 10);
+            var value = paRpeInt(dec_value, 10);
             value = isNaN(value) ? 0 : value;
             if(value > 1)
             {
@@ -129,7 +129,7 @@ $(document).ready(function () {
         $('.deleteCartItem').click(function (e) {
             e.preventDefault();
             $.ajaxSetup({
-                headers: {
+                headeRp: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
@@ -154,7 +154,7 @@ $(document).ready(function () {
         $('.changeQuantity').click(function (e) {
             e.preventDefault();
             $.ajaxSetup({
-                headers: {
+                headeRp: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
