@@ -17,7 +17,7 @@
     <div class="py-5">
         <div class="container">
             <div class="row">
-               
+
                     <a  href="{{url('/category')}}" class="card col-md-4 " style="border:none;">
                         <div class="card-body zoom postion-relative">
                             <img src="{{asset('images/accessories.jpg')}}"  class="w-100 lazy rounded" height="200px"   alt="">
@@ -42,11 +42,11 @@
                             </div>
                         </div>
                     </a>
-                
+
             </div>
         </div>
     </div>
-    
+
     <div class="container  d-flex align-items-center justify-content-around p-4">
         <div class="border border-dark " style="width:20rem; background:black;"></div>
         <h3 style="font-size: ; font-weight:bolder; padding:5px;">NEW ARRIVALS</h3>
@@ -62,8 +62,8 @@
                                 <img src="{{asset('upload/product/'.$item->image)}}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h6 class="card-title">{{$item->name}}</h6>
-                                        <span href="#" class=" pe-auto float-start">RS <s>{{$item->original_price}}</s></span>
-                                        <span href="#" class=" pe-auto float-end">RS {{$item->selling_price}}</span>
+                                        <span href="#" class=" pe-auto float-start">RP <s>{{$item->original_price}}</s></span>
+                                        <span href="#" class=" pe-auto float-end">RP {{$item->selling_price}}</span>
                                 </div>
                             </div>
                         </a>
@@ -112,16 +112,16 @@
 @endsection
 @section('css')
   <style>
-    
+
     .owl-nav
     {
-        display: block !important; 
+        display: block !important;
     }
     .owl-nav button
     {
         font-size: 2rem !important;
     }
-  
+
 
   </style>
 

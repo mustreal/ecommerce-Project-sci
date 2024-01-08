@@ -87,15 +87,15 @@
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
                 <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Wah Cantt, CA 94126, PAKISTAN</p>
+                    <p>Graha Sucofindo, Jl. Raya Pasar Minggu, Kav. 34 Jakarta 12780</p>
                 </li>
 
                 <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 92 313 5473241</p>
+                    <p>+62-21-7983666</p>
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>mrmoiz.dev@gmail.com</p>
+                    <p>customer.service@sucofindo.co.id</p>
                 </li>
             </ul>
         </div>
@@ -108,7 +108,7 @@
 </div>
 <div class="py-5"></div>
 
-    
+
 @endsection
 
 @section('scripts')
